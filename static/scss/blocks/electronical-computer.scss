@@ -1,0 +1,17 @@
+$blue: #2b769f;
+
+.ec {
+	position: relative;
+	overflow: hidden;
+	background-color: $blue;
+
+	&__inner {
+		position: relative;
+		z-index: 2;
+	}
+	
+	&__bg {
+		top: -500px;
+		background-image: url('../../img/ec_bg.jpg');
+	}
+}

@@ -1,0 +1,72 @@
+/**
+ * Introduction
+*/
+
+$grey: #2f2f2f;
+
+.in {
+	position: relative;
+	overflow: hidden;
+	background-color: $grey;
+
+	&__inner {
+		position: relative;
+		width: 570px;
+		margin: 0 auto;
+		z-index: 2;
+
+		/* parralax properties */
+		margin-top: 250px;
+
+		.header {
+			margin-bottom: 50px;
+		}
+
+		p {
+			text-align: center;
+			width: 70%;
+			margin: 0 auto;
+		}
+	}
+
+	&__header {
+		opacity: 0;
+		margin-top: 50px;
+	}
+
+	&__content {
+		opacity: 0;
+		margin-top: 50px;
+	}
+
+	&__icon-holder {
+		opacity: 0;
+		width: 43px;
+		margin: 50px auto 0;
+		position: relative;
+
+		.icon {
+			position: relative;
+			z-index: 4;
+		}
+	}
+
+	&__scroll {
+		opacity: 0;
+		background-color: #000;
+		border-radius: 5px;
+		padding: 5px 10px;
+		text-transform: uppercase;
+		display: inline-block;
+		color: #fff;
+		font-size: 12px;
+		position: absolute;
+		top: 9px;
+		left: 60px;
+		z-index: 3;
+	}
+
+	&__bg {
+		background-image: url('../../img/in_bg.jpg');
+	}
+}

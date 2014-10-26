@@ -1,0 +1,15 @@
+/* line 1, ../../scss/blocks/personal-computer.scss */
+.pc {
+  position: relative;
+  overflow: hidden;
+}
+/* line 5, ../../scss/blocks/personal-computer.scss */
+.pc__inner {
+  position: relative;
+  z-index: 2;
+}
+/* line 10, ../../scss/blocks/personal-computer.scss */
+.pc__bg {
+  top: -500px;
+  background-image: url("../../img/pc_bg.jpg");
+}

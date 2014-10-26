@@ -1,0 +1,15 @@
+/* line 1, ../../scss/blocks/mobile-devices.scss */
+.md {
+  position: relative;
+  overflow: hidden;
+}
+/* line 5, ../../scss/blocks/mobile-devices.scss */
+.md__inner {
+  position: relative;
+  z-index: 2;
+}
+/* line 10, ../../scss/blocks/mobile-devices.scss */
+.md__bg {
+  top: -500px;
+  background-image: url("../../img/md_bg.jpg");
+}

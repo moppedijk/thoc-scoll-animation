@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'universmedium';
+  src: url("../../fonts/univers-webfont.eot");
+  src: url("../../fonts/univers-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/univers-webfont.woff2") format("woff2"), url("../../fonts/univers-webfont.woff") format("woff"), url("../../fonts/univers-webfont.ttf") format("truetype"), url("../../fonts/univers-webfont.svg#universmedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

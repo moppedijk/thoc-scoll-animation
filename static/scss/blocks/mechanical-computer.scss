@@ -1,0 +1,32 @@
+$blue: #28456c;
+$brown: #a4633b;
+
+.mc {
+	overflow: hidden;
+	background-color: $blue;
+	position: relative;
+
+	&__inner {
+		position: relative;
+		z-index: 2;
+		width: 450px;
+		margin: 0 auto;
+		
+		/* scrollorama */
+		.circle__content {
+			opacity: 0;
+		}
+	}
+
+	&__bg {
+		background-image: url('../../img/mc_bg.jpg');
+
+		&--1 {
+			top: -500px;
+		}
+
+		&--2 {
+			top: -500px;
+		}
+	}
+}

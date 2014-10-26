@@ -1,0 +1,15 @@
+.icon {
+	display: inline-block;
+
+	&--scroll {
+		background-image: url('../../img/icon-scroll.png');
+		width: 43px;
+		height: 44px;
+	}
+
+	&--abacus {
+		background-image: url('../../img/icon-abacus.png');
+		width: 98px;
+		height: 64px;
+	}
+}

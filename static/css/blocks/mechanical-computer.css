@@ -1,0 +1,30 @@
+/* line 4, ../../scss/blocks/mechanical-computer.scss */
+.mc {
+  overflow: hidden;
+  background-color: #28456c;
+  position: relative;
+}
+/* line 9, ../../scss/blocks/mechanical-computer.scss */
+.mc__inner {
+  position: relative;
+  z-index: 2;
+  width: 450px;
+  margin: 0 auto;
+  /* scrollorama */
+}
+/* line 16, ../../scss/blocks/mechanical-computer.scss */
+.mc__inner .circle__content {
+  opacity: 0;
+}
+/* line 21, ../../scss/blocks/mechanical-computer.scss */
+.mc__bg {
+  background-image: url("../../img/mc_bg.jpg");
+}
+/* line 24, ../../scss/blocks/mechanical-computer.scss */
+.mc__bg--1 {
+  top: -500px;
+}
+/* line 28, ../../scss/blocks/mechanical-computer.scss */
+.mc__bg--2 {
+  top: -500px;
+}

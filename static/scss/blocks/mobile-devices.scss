@@ -1,0 +1,14 @@
+.md {
+	position: relative;
+	overflow: hidden;
+
+	&__inner {
+		position: relative;
+		z-index: 2;
+	}
+	
+	&__bg {
+		top: -500px;
+		background-image: url('../../img/md_bg.jpg');
+	}
+}

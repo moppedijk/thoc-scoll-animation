@@ -1,0 +1,16 @@
+/* line 3, ../../scss/blocks/electronical-computer.scss */
+.ec {
+  position: relative;
+  overflow: hidden;
+  background-color: #2b769f;
+}
+/* line 8, ../../scss/blocks/electronical-computer.scss */
+.ec__inner {
+  position: relative;
+  z-index: 2;
+}
+/* line 13, ../../scss/blocks/electronical-computer.scss */
+.ec__bg {
+  top: -500px;
+  background-image: url("../../img/ec_bg.jpg");
+}

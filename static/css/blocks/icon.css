@@ -1,0 +1,16 @@
+/* line 1, ../../scss/blocks/icon.scss */
+.icon {
+  display: inline-block;
+}
+/* line 4, ../../scss/blocks/icon.scss */
+.icon--scroll {
+  background-image: url("../../img/icon-scroll.png");
+  width: 43px;
+  height: 44px;
+}
+/* line 10, ../../scss/blocks/icon.scss */
+.icon--abacus {
+  background-image: url("../../img/icon-abacus.png");
+  width: 98px;
+  height: 64px;
+}

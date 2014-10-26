@@ -1,0 +1,15 @@
+/* line 1, ../../scss/blocks/miniturisatie.scss */
+.mi {
+  position: relative;
+  overflow: hidden;
+}
+/* line 5, ../../scss/blocks/miniturisatie.scss */
+.mi__inner {
+  position: relative;
+  z-index: 2;
+}
+/* line 10, ../../scss/blocks/miniturisatie.scss */
+.mi__bg {
+  top: -500px;
+  background-image: url("../../img/mi_bg.jpg");
+}

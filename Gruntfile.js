@@ -26,11 +26,11 @@ module.exports = function(grunt) {
 	 			separator: ';',
 	 		},
 	 		app: {
-	 			src: ['static/js/app/*.js'],
+	 			src: ['static/js/app/*.js', 'static/js/app/components/*.js', 'static/js/app/sections/*.js'],
 	 			dest: 'dest/js/app.js',
 	 		},
 	 		lib: {
-	 			src: 'static/js/lib/*.js',
+	 			src: 'static/js/lib/**/*.js',
 	 			dest: 'dest/js/lib.js',
 	 		},
 	 	},
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
       			// Task-specific options go here.
     		},
     		all: {
-      			src: ['static/css/layout.css', 'static/css/blocks/*.css'],
+      			src: ['static/css/fonts.css', 'static/css/layout.css', 'static/css/blocks/*.css'],
       			dest: 'dest/css/style.css',
     		},
   		},

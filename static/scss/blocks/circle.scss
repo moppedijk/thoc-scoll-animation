@@ -1,0 +1,103 @@
+
+.circle {
+	border-radius: 50%;
+	position: relative;
+	margin: 0 auto;
+
+	p {
+		text-align: center;
+	}
+
+	&__header {
+		padding-top: 112px;
+		padding-bottom: 45px;
+	}
+
+	&__content {
+
+		p {
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+
+	&__time-stamp {
+		font-size: 36px;
+		padding-top: 50px;
+		font-style: italic;
+	}
+
+	&--mc {
+		&-blue {
+			background-color: #28456c;
+		}
+		&-brown {
+			background-color: #a4633b;
+		}
+	}
+
+	&--ec {
+		&-blue {
+			background-color: #79a1b7;
+		}
+		&-brown {
+			background-color: #a6472b;
+		}
+	}
+
+	&--mi {
+		&-sand {
+			background-color: #9f8655;
+		}
+		&-pink {
+			background-color: #d25053;
+		}
+	}
+
+	&--pc {
+		&-pink {
+			background-color: #593d65;
+		}
+		&-sand {
+			background-color: #988f59;
+		}
+	}
+
+	&--ma {
+		&-yellow {
+			background-color: #d9b73b;
+		}
+		&-brown {
+			background-color: #a26939;
+		}
+	}
+
+	&--top {
+		width: 140px;
+		height: 140px;
+		text-align: center;
+		position:relative;
+		z-index: 4;
+
+		.icon {
+			margin-top: 50px;
+		}
+	}
+
+	&--center {
+		width: 450px;
+		height: 450px;
+		margin-top: -100px;
+		position:relative;
+		z-index: 3;
+	}
+
+	&--bottom {
+		margin-top: -85px;
+		width: 140px;
+		height: 140px;
+		position:relative;
+		z-index: 4;
+	}
+}
+

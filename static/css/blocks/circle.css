@@ -1,0 +1,94 @@
+/* line 2, ../../scss/blocks/circle.scss */
+.circle {
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+}
+/* line 7, ../../scss/blocks/circle.scss */
+.circle p {
+  text-align: center;
+}
+/* line 11, ../../scss/blocks/circle.scss */
+.circle__header {
+  padding-top: 112px;
+  padding-bottom: 45px;
+}
+/* line 18, ../../scss/blocks/circle.scss */
+.circle__content p {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 24, ../../scss/blocks/circle.scss */
+.circle__time-stamp {
+  font-size: 36px;
+  padding-top: 50px;
+  font-style: italic;
+}
+/* line 31, ../../scss/blocks/circle.scss */
+.circle--mc-blue {
+  background-color: #28456c;
+}
+/* line 34, ../../scss/blocks/circle.scss */
+.circle--mc-brown {
+  background-color: #a4633b;
+}
+/* line 40, ../../scss/blocks/circle.scss */
+.circle--ec-blue {
+  background-color: #79a1b7;
+}
+/* line 43, ../../scss/blocks/circle.scss */
+.circle--ec-brown {
+  background-color: #a6472b;
+}
+/* line 49, ../../scss/blocks/circle.scss */
+.circle--mi-sand {
+  background-color: #9f8655;
+}
+/* line 52, ../../scss/blocks/circle.scss */
+.circle--mi-pink {
+  background-color: #d25053;
+}
+/* line 58, ../../scss/blocks/circle.scss */
+.circle--pc-pink {
+  background-color: #593d65;
+}
+/* line 61, ../../scss/blocks/circle.scss */
+.circle--pc-sand {
+  background-color: #988f59;
+}
+/* line 67, ../../scss/blocks/circle.scss */
+.circle--ma-yellow {
+  background-color: #d9b73b;
+}
+/* line 70, ../../scss/blocks/circle.scss */
+.circle--ma-brown {
+  background-color: #a26939;
+}
+/* line 75, ../../scss/blocks/circle.scss */
+.circle--top {
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  position: relative;
+  z-index: 4;
+}
+/* line 82, ../../scss/blocks/circle.scss */
+.circle--top .icon {
+  margin-top: 50px;
+}
+/* line 87, ../../scss/blocks/circle.scss */
+.circle--center {
+  width: 450px;
+  height: 450px;
+  margin-top: -100px;
+  position: relative;
+  z-index: 3;
+}
+/* line 95, ../../scss/blocks/circle.scss */
+.circle--bottom {
+  margin-top: -85px;
+  width: 140px;
+  height: 140px;
+  position: relative;
+  z-index: 4;
+}

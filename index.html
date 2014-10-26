@@ -4,10 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
-	<title>Web App | Fed 2</title>
+	<title>Motion design</title>
 	
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<!-- static assets -->
 	<link rel="stylesheet" type="text/css" href="dest/css/style.css" media="screen, handheld" />
 
@@ -17,166 +15,146 @@
 	<!-- Live reload -->
 	<script src="//localhost:35729/livereload.js"></script>
 
-	<div id="loader" class="loader loader--isactive">
-		<div class="loader__content">
-			<p><i class="fa fa-refresh fa-spin"></i> Loading...</p>
-		</div>
-	</div>
+	<div class="wrapper" id="app">
 
-	<div class="wrapper">
-		<header id="header" class="header">
-			<nav class="global-nav">
-				<ul class="global-nav__ul">
-					<li><a href="#main">Main</a></li>
-					<li><a href="#about">About</a></li>
-				</ul>
-			</nav>
-		</header>
-		<section class="content" id="fed-app"></section>
-	</div>
-
-	<footer class="footer">
-		<div class="footer__content">
-			<p>Front-end 2 - Webapplication</p>
-		</div>
-	</footer>
-
-	<!-- Templates  -->
-	<script id="template-main" type="text/x-handlebars-template">
-		<section class="main">
-			<div class="main__nav">
-  				<ul class="main__nav-ul">
-  					<li><a title="Events" href="#main/event">Events</a></li>
-  					<li><a title="Venue" href="#main/venue">Venue</a></li>
-  					<li><a title="Production" href="#main/production">Production</a></li>
-  				</ul>
-  			</div>
-  			
-  			<div id="main-content" class="main__content">
-  				<p>Selecteer een categorie...</p>
-  			</div>
-		</section>
-	</script>
-
-	<script id="template-list" type="text/x-handlebars-template">
-  		<div id="list-view" class="main">
-  			<div class="main__nav">
-  				<ul class="main__nav-ul main__nav-left">
-  					<li><a title="Events" href="#main/event">Events</a></li>
-  					<li><a title="Venue" href="#main/venue">Venue</a></li>
-  					<li><a title="Production" href="#main/production">Production</a></li>
-  				</ul>
-  				<div class="main__nav-plain main__nav-right">
-  					<p>Page: {{metadata.page}} | Per Page: {{metadata.per_page}}</p>
-  				</div>
-  			</div>
-
-  			<div class="main__filter">
-  				<div class="form">
-  					<label class="form__label" for="form__event-locality">In de buurt van</label>
-  					<div class="form__input-holder">
-  						<input id="form-input-locality" class="form__input" type="text" placeholder="Bijv. Amsterdam">
-  					</div>
-  					<a id="form-btn-submit" href="javascipt:void(0);" title="Submit">Zoek</a>
-  				</div>
-  			</div>
-
-  			<div class="main__content">
-  				<div class="main__content-inner">
-		  			{{#each results}}
-		  				<div class="main__content-item main__content-item--small">
-		  					<h1>{{title}}</h1>
-		  					<ul>
-						  		<li><a href="#main/{{listType}}/{{cidn}}">cidn: {{cidn}}</a></li>
-						  		<li>created: {{created}}</li>
-						  		<li>disabilityInformation: {{disabilityInformation}}</li>
-						  		<li>homepage: {{homepage}}</li>
-						  		<li>locationAddress: {{locationAddress}}</li>
-						  		<li>modified: {{monified}}</li>
-						  		<li>sameAs: {{sameAs}}</li>
-						  		<li>telephone: {{telephone}}</li>
-						  		<li>type: {{type}}</li>
-						  		<li>uri: {{uri}}</li>
-						  		<li>venueType: {{venueType}}</li>
-						  	</ul>
-					  	</div>
-					{{/each}}
+		<section class="scrollblock in" id="in">
+			<div class="in__bg bg-cover" id="in-bg"></div>
+			<div class="in__inner" id="in-intro">
+				<div class="in__header" id="in-header">
+					<h1 class="header header--large">Geschiedenis van de computer</h1>
 				</div>
-			</div>
-  		</div>
-	</script>
-
-	<script id="template-detail" type="text/x-handlebars-template">
-		<div class="main">
-			<div class="main__nav">
-  				<ul class="main__nav-ul">
-  					<li><a title="Events" href="#main/{{listType}}"><i class="fa fa-reply"></i> Terug - {{listType}}</a></li>
-  					<li><span class="main__nav-link">Cidn: {{cidn}}</span></li>
-  				</ul>
-	  		</div>
-
-	  		<div class="main__content">
-	  			<div class="main__content-inner">
-	  				<div class="main__content-item main__content-item--large">
-						<h1>Title: {{title}}</h1>
-						<ul>
-							<li>attatchment: {{attatchment}}</li>
-							<li>cidn: {{cidn}}</li>
-							<li>description: {{description}}</li>
-							<li>eventStatus: {{eventStatus}}</li>
-							<li>hasBeginning: {{hasBeginning}}</li>
-							<li>hasEnd: {{hasEnd}}</li>
-							<li>modified: {{modified}}</li>
-							<li>offer: {{offers}}</li>
-							<li>productions: {{productions}}</li>
-							<li>sameAs: {{sameAs}}</li>
-							<li>type: {{type}}</li>
-							<li>uri: {{uri}}</li>
-							<li>venue: {{venue}}</li>
-						</ul>
-						<div>
-							<ul>
-								<li><a target="_blank" href="http://api.artsholland.com/rest/event/{{cidn}}/venue.json">Venues in which event {{cidn}} takes place</a></li>
-								<li><a target="_blank" href="http://api.artsholland.com/rest/event/{{cidn}}/production.json">Productions associated with the event {{cidn}}</a></li>
-								<li><a target="_blank" href="http://api.artsholland.com/rest/event/{{cidn}}/room.json">Rooms in which event {{cidn}} takes place</a></li>
-								<li><a target="_blank" href="http://api.artsholland.com/rest/event/{{cidn}}/attatchment.json">Attatchments associated with event {{cidn}}</a></li>
-								<li><a target="_blank" href="http://api.artsholland.com/rest/event/{{cidn}}/offering.json">Offers available for event {{cidn}}</a></li>
-								<li><a target="_blank" href="http://api.artsholland.com/rest/event/{{cidn}}/offering/offering-name/price.json">Price specification of offer [name]</a></li>
-							</ul>
-						</div>
+				<div class="in__content" id="in-content">
+					<p>De geschiedenis van de computer weergegeven in een chronologische volgorde van de mechanische computer tot het mobiele tijdperk.</p>
+				</div>
+				<div class="in__icon-holder" id="in-icon">
+					<i class="icon icon--scroll"></i>
+					<div class="in__scroll" id="in-scroll">
+						<span>Scroll</span>
 					</div>
 				</div>
 			</div>
-		</div>
-	</script>
-
-	<script id="template-about" type="text/x-handlebars-template">
-		<section class="about">
-			<header>
-				<h1>About this app</h1>
-
-				<p>Cities fall but they are rebuilt. heroes die but they are remembered. the man likes to play chess; let's get him some rocks. circumstances have taught me that a man's ethics are the only possessions he will take beyond the grave. multiply your anger by about a hundred, kate, that's how much he thinks he loves you. bruce... i'm god. multiply your anger by about a hundred, kate, that's how much he thinks he loves you. no, this is mount everest. you should flip on the discovery channel from time to time. but i guess you can't now, being dead and all. rehabilitated? well, now let me see. you know, i don't have any idea what that means. mister wayne, if you don't want to tell me exactly what you're doing, when i'm asked, i don't have to lie. but don't think of me as an idiot. rehabilitated? well, now let me see. you know, i don't have any idea what that means. cities fall but they are rebuilt. heroes die but they are remembered. no, this is mount everest. you should flip on the discovery channel from time to time. but i guess you can't now, being dead and all.</p>
-				<p>I did the same thing to gandhi, he didn't eat for three weeks. bruce... i'm god. cities fall but they are rebuilt. heroes die but they are remembered. i once heard a wise man say there are no perfect men. only perfect intentions. cities fall but they are rebuilt. heroes die but they are remembered. boxing is about respect. getting it for yourself, and taking it away from the other guy. well, what is it today? more spelunking? let me tell you something my friend. hope is a dangerous thing. hope can drive a man insane. bruce... i'm god. well, what is it today? more spelunking? it only took me six days. same time it took the lord to make the world. i did the same thing to gandhi, he didn't eat for three weeks.</p>
-				<p>Let me tell you something my friend. hope is a dangerous thing. hope can drive a man insane. boxing is about respect. getting it for yourself, and taking it away from the other guy. mister wayne, if you don't want to tell me exactly what you're doing, when i'm asked, i don't have to lie. but don't think of me as an idiot. you measure yourself by the people who measure themselves by you. circumstances have taught me that a man's ethics are the only possessions he will take beyond the grave. circumstances have taught me that a man's ethics are the only possessions he will take beyond the grave. you measure yourself by the people who measure themselves by you. you measure yourself by the people who measure themselves by you. that tall drink of water with the silver spoon up his ass. i once heard a wise man say there are no perfect men. only perfect intentions. mister wayne, if you don't want to tell me exactly what you're doing, when i'm asked, i don't have to lie. but don't think of me as an idiot. boxing is about respect. getting it for yourself, and taking it away from the other guy.</p>
-				<p>That tall drink of water with the silver spoon up his ass. well, what is it today? more spelunking? i now issue a new commandment: thou shalt do the dance. let me tell you something my friend. hope is a dangerous thing. hope can drive a man insane. i did the same thing to gandhi, he didn't eat for three weeks. the man likes to play chess; let's get him some rocks. i now issue a new commandment: thou shalt do the dance. i now issue a new commandment: thou shalt do the dance. multiply your anger by about a hundred, kate, that's how much he thinks he loves you. i don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. that tall drink of water with the silver spoon up his ass. it only took me six days. same time it took the lord to make the world. </p>
-			</header>
 		</section>
-	</script>
 
-	<script id="template-404" type="text/x-handlebars-template">
-		<section class="page-404">
-			<h1>404 Pagina niet gevonden</h1>
+		<section class="scrollblock mc" id="mc">
+			<div class="mc__bg mc__bg--1 bg-cover" id="mc-bg"></div>
+			<div class="mc__inner" id="mc-intro">
+				<div class="circle circle--top circle--mc-blue" id="mc-circle-top">
+					<i class="icon icon--abacus" id="mc-circle-icon"></i>
+				</div>
+				<div class="circle circle--center circle--mc-blue" id="mc-circle-center">
+					<div class="circle__header mc__header" id="mc-header">
+						<h1 class="header header--large">Mechanical computer</h1>
+					</div>
+					<div class="circle__content" id="mc-content">
+						<p>De geschiedenis van de computer weergegeven in een chronologische volgorde van de mechanische computer tot het mobiele tijdperk.</p>
+					</div>
+				</div>
+				<div class="circle circle--bottom circle--mc-brown" id="mc-circle-bottom">
+					<p class="circle__time-stamp">1882</p>
+				</div>
+			</div>
 		</section>
-	</script>
+
+		<section class="scrollblock mc" id="mc2">
+			<div class="mc__bg mc__bg--2 bg-cover" id="mc2-bg"></div>
+		</section>
+
+		<section class="scrollblock ec" id="ec">
+			<div class="ec__bg bg-cover" id="ec-bg"></div>
+			<div class="ec__inner">
+				<div class="circle circle--top circle--ec-blue" id="ec-circle-top"></div>
+				<div class="circle circle--center circle--ec-blue" id="ec-circle-center">
+					<div class="circle__header ec__header" id="ec-header">
+						<h1 class="header header--large">Electronische computer</h1>
+					</div>
+					<div class="circle__content" id="ec-content">
+						<p>De geschiedenis van de computer weergegeven in een chronologische volgorde van de mechanische computer tot het mobiele tijdperk.</p>
+					</div>
+				</div>
+				<div class="circle circle--bottom circle--ec-brown" id="ec-circle-bottom">
+					<p class="circle__time-stamp">1944</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="scrollblock mi" id="mi">
+			<div class="mi__bg bg-cover" id="mi-bg"></div>
+			<div class="mi__inner">
+				<div class="circle circle--top circle--mi-sand" id="mi-circle-top"></div>
+				<div class="circle circle--center circle--mi-sand" id="mi-circle-center">
+					<div class="circle__header mi__header" id="mi-header">
+						<h1 class="header header--large">Miniturisatie</h1>
+					</div>
+					<div class="circle__content" id="mi-content">
+						<p>De geschiedenis van de computer weergegeven in een chronologische volgorde van de mmihanische computer tot het mobiele tijdperk.</p>
+					</div>
+				</div>
+				<div class="circle circle--bottom circle--mi-pink" id="mi-circle-bottom">
+					<p class="circle__time-stamp">1970</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="scrollblock pc" id="pc">
+			<div class="pc__bg bg-cover" id="pc-bg"></div>
+			<div class="pc__inner">
+				<div class="circle circle--top circle--pc-sand" id="pc-circle-top"></div>
+				<div class="circle circle--center circle--pc-sand" id="pc-circle-center">
+					<div class="circle__header pc__header" id="pc-header">
+						<h1 class="header header--large">Pc</h1>
+					</div>
+					<div class="circle__content" id="pc-content">
+						<p>De geschiedenis van de computer weergegeven in een chronologische volgorde van de mpchanische computer tot het mobiele tijdperk.</p>
+					</div>
+				</div>
+				<div class="circle circle--bottom circle--pc-pink" id="pc-circle-bottom">
+					<p class="circle__time-stamp">1970</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="scrollblock md" id="md">
+			<div class="md__bg bg-cover" id="md-bg"></div>
+			<div class="md__inner">
+				<div class="circle circle--top circle--md-yellow" id="md-circle-top"></div>
+				<div class="circle circle--center circle--md-yellow" id="md-circle-center">
+					<div class="circle__header md__header" id="md-header">
+						<h1 class="header header--large">Mobiele apparaten</h1>
+					</div>
+					<div class="circle__content" id="md-content">
+						<p>De geschiedenis van de computer weergegeven in een chronologische volgorde van de mmdhanische computer tot het mobiele tijdperk.</p>
+					</div>
+				</div>
+				<div class="circle circle--bottom circle--md-brown" id="md-circle-bottom">
+					<p class="circle__time-stamp">1990</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="scrollblock po" id="po">
+			<div class="po__bg bg-cover"></div>
+			<div class="po__inner">
+				<h1 class="header">Pay off</h1>
+			</div>
+		</section>
+	</div>
+
+	<!-- Lib -->
+	<script src="dest/js/lib.js"></script>
+
+	<!-- Tweenlite -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenLite.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TimelineLite.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/easing/EasePack.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/plugins/CSSPlugin.min.js"></script>
 	
-	<!-- Javascipt -->
-	<script src="dest/js/lib.min.js"></script>
+	<!-- App -->
 	<script src="dest/js/app.js"></script>
 	<script>
 
-		(function(){
-			fedApp.app.init();
-		})();
+		$(document).ready(function(){
+			MotionDesign.App.init();
+		});
 
 	</script>
 </body>
