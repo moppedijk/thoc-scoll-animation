@@ -12,4 +12,28 @@
 		width: 98px;
 		height: 64px;
 	}
+
+	&--lamps {
+		background-image: url('../../img/icon-lamps.png');
+		width: 123px;
+		height: 55px;
+	}
+
+	&--chip {
+		background-image: url('../../img/icon-chip.png');
+		width: 88px;
+		height: 88px;
+	}
+
+	&--comp {
+		background-image: url('../../img/icon-comp.png');
+		width: 91px;
+		height: 52px;	
+	}
+
+	&--phone {
+		background-image: url('../../img/icon-phone.png');
+		width: 49px;
+		height: 78px;	
+	}
 }
