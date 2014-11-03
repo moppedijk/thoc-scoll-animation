@@ -10,7 +10,121 @@
 }
 /* line 10, ../../scss/blocks/icon.scss */
 .icon--abacus {
-  background-image: url("../../img/icon-abacus.png");
-  width: 98px;
-  height: 64px;
+  background-image: url("../../img/icon-abacus.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 16, ../../scss/blocks/icon.scss */
+.icon--lamps {
+  background-image: url("../../img/icon-lamps.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 22, ../../scss/blocks/icon.scss */
+.icon--chip {
+  background-image: url("../../img/icon-chip.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 28, ../../scss/blocks/icon.scss */
+.icon--chip1 {
+  background-image: url("../../img/icon-chip1.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 34, ../../scss/blocks/icon.scss */
+.icon--chip2 {
+  background-image: url("../../img/icon-chip2.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 40, ../../scss/blocks/icon.scss */
+.icon--chip3 {
+  background-image: url("../../img/icon-chip3.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 46, ../../scss/blocks/icon.scss */
+.icon--chip4 {
+  background-image: url("../../img/icon-chip4.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 52, ../../scss/blocks/icon.scss */
+.icon--comp {
+  background-image: url("../../img/icon-comp.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 58, ../../scss/blocks/icon.scss */
+.icon--phone {
+  background-image: url("../../img/icon-phone.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 64, ../../scss/blocks/icon.scss */
+.icon--calculating {
+  background-image: url("../../img/icon-calculating.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 70, ../../scss/blocks/icon.scss */
+.icon--logaritme {
+  background-image: url("../../img/icon-logaritme.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 76, ../../scss/blocks/icon.scss */
+.icon--ponskaart {
+  background-image: url("../../img/icon-ponskaart.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 82, ../../scss/blocks/icon.scss */
+.icon--binair {
+  background-image: url("../../img/icon-binair.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 88, ../../scss/blocks/icon.scss */
+.icon--light {
+  background-image: url("../../img/icon-light.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 94, ../../scss/blocks/icon.scss */
+.icon--resistor {
+  background-image: url("../../img/icon-resistor.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 100, ../../scss/blocks/icon.scss */
+.icon--ibm {
+  background-image: url("../../img/icon-ibm.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 106, ../../scss/blocks/icon.scss */
+.icon--microsoft {
+  background-image: url("../../img/icon-microsoft.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 112, ../../scss/blocks/icon.scss */
+.icon--intel {
+  background-image: url("../../img/icon-intel.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 118, ../../scss/blocks/icon.scss */
+.icon--tablet {
+  background-image: url("../../img/icon-tablet.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 124, ../../scss/blocks/icon.scss */
+.icon--smartphone {
+  background-image: url("../../img/icon-smartphone.gif");
+  width: 100px;
+  height: 100px;
 }

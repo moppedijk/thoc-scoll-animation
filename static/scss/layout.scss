@@ -14,6 +14,10 @@ section {
 	width: 100%;
 }
 
+#md2 {
+	height: 500px;
+}
+
 p {
 	font-size: 12px;
 	color: #fff;
@@ -45,5 +49,45 @@ p {
 
 	&--large {
 		font-size: 48px;
+	}
+}
+
+.list {
+	color: #fff;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	&--large {
+		font-size: 14px;
+	}
+
+	&--mc {
+		li {
+			background-color: #28456c;
+			padding: 5px 10px;
+			margin: 20px 10px;
+			border-radius: 5px;	
+		}
+	}
+}
+
+.clearfix {
+	clear: both;
+}
+
+.footer {
+	padding: 20px 20px 40px;
+	color: #000;
+	width: 960px;
+	margin: 0 auto;
+
+	&__left {
+		float: left;
+	}
+
+	&__right {
+		float: right;
+		text-align: right;
 	}
 }

@@ -1,0 +1,79 @@
+/**
+	Miniaturisatie
+*/
+/* line 8, ../../scss/blocks/miniaturisatie.scss */
+.mi {
+  position: relative;
+  overflow: hidden;
+  background-color: #31827e;
+}
+/* line 13, ../../scss/blocks/miniaturisatie.scss */
+.mi__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 450px;
+  margin: 0 auto;
+}
+/* line 20, ../../scss/blocks/miniaturisatie.scss */
+.mi__bg {
+  top: -500px;
+  background-image: url("../../img/mi_bg.jpg");
+}
+/* line 25, ../../scss/blocks/miniaturisatie.scss */
+.mi__content {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+/* line 32, ../../scss/blocks/miniaturisatie.scss */
+.mi__list {
+  position: relative;
+}
+/* line 35, ../../scss/blocks/miniaturisatie.scss */
+.mi__list-item {
+  overflow: hidden;
+  position: absolute;
+}
+/* line 41, ../../scss/blocks/miniaturisatie.scss */
+.mi__list-left {
+  float: left;
+}
+/* line 44, ../../scss/blocks/miniaturisatie.scss */
+.mi__list-left p,
+.mi__list-left h1 {
+  margin-left: 162px;
+}
+/* line 50, ../../scss/blocks/miniaturisatie.scss */
+.mi__list-right {
+  float: right;
+}
+/* line 53, ../../scss/blocks/miniaturisatie.scss */
+.mi__list-right p {
+  max-width: 600px;
+}
+/* line 58, ../../scss/blocks/miniaturisatie.scss */
+.mi__list--icon {
+  width: 160px;
+}
+/* line 61, ../../scss/blocks/miniaturisatie.scss */
+.mi__list--icon .icon {
+  padding: 20px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  background-color: #9f8655;
+}
+/* line 70, ../../scss/blocks/miniaturisatie.scss */
+.mi__list--content {
+  width: 800px;
+}
+/* line 74, ../../scss/blocks/miniaturisatie.scss */
+.mi__list h1 {
+  color: #fff;
+  font-size: 40px;
+}
+/* line 79, ../../scss/blocks/miniaturisatie.scss */
+.mi__list p {
+  font-size: 20px;
+}

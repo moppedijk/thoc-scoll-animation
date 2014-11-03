@@ -52,6 +52,6 @@
 		this.init();
 	}
 
-	MotionDesign.Sections.Introduction = Introduction;
+	motionDesign.sections.Introduction = Introduction;
 
 })();

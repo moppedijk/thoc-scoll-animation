@@ -18,12 +18,17 @@ section {
 }
 
 /* line 17, ../scss/layout.scss */
+#md2 {
+  height: 500px;
+}
+
+/* line 21, ../scss/layout.scss */
 p {
   font-size: 12px;
   color: #fff;
 }
 
-/* line 23, ../scss/layout.scss */
+/* line 27, ../scss/layout.scss */
 .bg-fixed {
   width: 100%;
   height: 100%;
@@ -32,7 +37,7 @@ p {
   z-index: 1;
   background-size: cover;
 }
-/* line 32, ../scss/layout.scss */
+/* line 36, ../scss/layout.scss */
 .bg-cover {
   background-size: cover;
   position: absolute;
@@ -41,13 +46,54 @@ p {
   z-index: 1;
 }
 
-/* line 41, ../scss/layout.scss */
+/* line 45, ../scss/layout.scss */
 .header {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
 }
-/* line 46, ../scss/layout.scss */
+/* line 50, ../scss/layout.scss */
 .header--large {
   font-size: 48px;
+}
+
+/* line 55, ../scss/layout.scss */
+.list {
+  color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 61, ../scss/layout.scss */
+.list--large {
+  font-size: 14px;
+}
+/* line 66, ../scss/layout.scss */
+.list--mc li {
+  background-color: #28456c;
+  padding: 5px 10px;
+  margin: 20px 10px;
+  border-radius: 5px;
+}
+
+/* line 75, ../scss/layout.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 79, ../scss/layout.scss */
+.footer {
+  padding: 20px 20px 40px;
+  color: #000;
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 85, ../scss/layout.scss */
+.footer__left {
+  float: left;
+}
+/* line 89, ../scss/layout.scss */
+.footer__right {
+  float: right;
+  text-align: right;
 }

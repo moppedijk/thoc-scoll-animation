@@ -7,7 +7,7 @@
 /* line 9, ../../scss/blocks/mechanical-computer.scss */
 .mc__inner {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   width: 450px;
   margin: 0 auto;
   /* scrollorama */
@@ -27,4 +27,113 @@
 /* line 28, ../../scss/blocks/mechanical-computer.scss */
 .mc__bg--2 {
   top: -500px;
+}
+/* line 33, ../../scss/blocks/mechanical-computer.scss */
+.mc__header {
+  padding: 70px 0px 40px;
+  position: relative;
+}
+/* line 37, ../../scss/blocks/mechanical-computer.scss */
+.mc__header--right {
+  position: absolute;
+  right: 90px;
+  top: 110px;
+}
+/* line 44, ../../scss/blocks/mechanical-computer.scss */
+.mc__content {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+/* line 51, ../../scss/blocks/mechanical-computer.scss */
+.mc__column {
+  width: 50%;
+}
+/* line 54, ../../scss/blocks/mechanical-computer.scss */
+.mc__column--left {
+  float: left;
+  opacity: 0;
+}
+/* line 59, ../../scss/blocks/mechanical-computer.scss */
+.mc__column--right {
+  float: right;
+  padding-top: 45px;
+  opacity: 0;
+}
+/* line 65, ../../scss/blocks/mechanical-computer.scss */
+.mc__column-inner {
+  padding: 20px;
+}
+/* line 70, ../../scss/blocks/mechanical-computer.scss */
+.mc__list {
+  position: relative;
+}
+/* line 73, ../../scss/blocks/mechanical-computer.scss */
+.mc__list-item {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+}
+/* line 79, ../../scss/blocks/mechanical-computer.scss */
+.mc__list-left {
+  float: left;
+}
+/* line 82, ../../scss/blocks/mechanical-computer.scss */
+.mc__list-left p,
+.mc__list-left h1 {
+  margin-left: 162px;
+}
+/* line 88, ../../scss/blocks/mechanical-computer.scss */
+.mc__list-right {
+  float: right;
+}
+/* line 91, ../../scss/blocks/mechanical-computer.scss */
+.mc__list-right p {
+  max-width: 600px;
+}
+/* line 96, ../../scss/blocks/mechanical-computer.scss */
+.mc__list--icon {
+  width: 160px;
+}
+/* line 99, ../../scss/blocks/mechanical-computer.scss */
+.mc__list--icon .icon {
+  padding: 20px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  background-color: #28456c;
+}
+/* line 108, ../../scss/blocks/mechanical-computer.scss */
+.mc__list--content {
+  width: 800px;
+}
+/* line 112, ../../scss/blocks/mechanical-computer.scss */
+.mc__list h1 {
+  color: #fff;
+  font-size: 40px;
+}
+/* line 117, ../../scss/blocks/mechanical-computer.scss */
+.mc__list p {
+  font-size: 20px;
+}
+/* line 121, ../../scss/blocks/mechanical-computer.scss */
+.mc__list #mc-list-item1 {
+  z-index: 6;
+}
+/* line 124, ../../scss/blocks/mechanical-computer.scss */
+.mc__list #mc-list-item2 {
+  z-index: 5;
+}
+/* line 127, ../../scss/blocks/mechanical-computer.scss */
+.mc__list #mc-list-item3 {
+  z-index: 4;
+}
+/* line 130, ../../scss/blocks/mechanical-computer.scss */
+.mc__list #mc-list-item4 {
+  z-index: 3;
+}
+/* line 133, ../../scss/blocks/mechanical-computer.scss */
+.mc__list #mc-list-item5 {
+  z-index: 2;
 }

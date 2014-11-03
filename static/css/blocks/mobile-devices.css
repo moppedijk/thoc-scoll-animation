@@ -1,15 +1,80 @@
-/* line 1, ../../scss/blocks/mobile-devices.scss */
+/**
+	Mobile devices
+*/
+/* line 5, ../../scss/blocks/mobile-devices.scss */
 .md {
   position: relative;
   overflow: hidden;
+  background-color: #214491;
 }
-/* line 5, ../../scss/blocks/mobile-devices.scss */
+/* line 10, ../../scss/blocks/mobile-devices.scss */
 .md__inner {
   position: relative;
   z-index: 2;
+  max-width: 450px;
+  margin: 0 auto;
 }
-/* line 10, ../../scss/blocks/mobile-devices.scss */
+/* line 17, ../../scss/blocks/mobile-devices.scss */
 .md__bg {
   top: -500px;
   background-image: url("../../img/md_bg.jpg");
+}
+/* line 22, ../../scss/blocks/mobile-devices.scss */
+.md__content {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+/* line 29, ../../scss/blocks/mobile-devices.scss */
+.md__list {
+  position: relative;
+}
+/* line 32, ../../scss/blocks/mobile-devices.scss */
+.md__list-item {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+}
+/* line 38, ../../scss/blocks/mobile-devices.scss */
+.md__list-left {
+  float: left;
+}
+/* line 41, ../../scss/blocks/mobile-devices.scss */
+.md__list-left p,
+.md__list-left h1 {
+  margin-left: 162px;
+}
+/* line 47, ../../scss/blocks/mobile-devices.scss */
+.md__list-right {
+  float: right;
+}
+/* line 50, ../../scss/blocks/mobile-devices.scss */
+.md__list-right p {
+  max-width: 600px;
+}
+/* line 55, ../../scss/blocks/mobile-devices.scss */
+.md__list--icon {
+  width: 160px;
+}
+/* line 58, ../../scss/blocks/mobile-devices.scss */
+.md__list--icon .icon {
+  padding: 20px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  background-color: #d9b73b;
+}
+/* line 67, ../../scss/blocks/mobile-devices.scss */
+.md__list--content {
+  width: 800px;
+}
+/* line 71, ../../scss/blocks/mobile-devices.scss */
+.md__list h1 {
+  color: #fff;
+  font-size: 40px;
+}
+/* line 76, ../../scss/blocks/mobile-devices.scss */
+.md__list p {
+  font-size: 20px;
 }

@@ -62,8 +62,10 @@
   top: 9px;
   left: 60px;
   z-index: 3;
+  animation: fade 3000ms infinite;
+  -webkit-animation: fade 3000ms infinite;
 }
-/* line 69, ../../scss/blocks/introduction.scss */
+/* line 71, ../../scss/blocks/introduction.scss */
 .in__bg {
   background-image: url("../../img/in_bg.jpg");
 }

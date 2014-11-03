@@ -1,14 +1,80 @@
+/**
+	Mobile devices
+*/
+
 .md {
 	position: relative;
 	overflow: hidden;
+	background-color: #214491;
 
 	&__inner {
 		position: relative;
 		z-index: 2;
+		max-width: 450px;
+		margin: 0 auto;
 	}
 	
 	&__bg {
 		top: -500px;
 		background-image: url('../../img/md_bg.jpg');
+	}
+
+	&__content {
+		max-width: 960px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 3;
+	}
+
+	&__list {
+		position: relative;
+
+		&-item {
+			overflow: hidden;
+			position: absolute;
+			opacity: 0;
+		}
+
+		&-left {
+			float: left;
+
+			p,
+			h1 {
+				margin-left: 162px;
+			}
+		}
+
+		&-right {
+			float: right;
+
+			p {
+				max-width: 600px;
+			}
+		}
+
+		&--icon {
+			width: 160px;
+
+			.icon {
+				padding: 20px;
+				border-radius: 50%;
+				background-repeat: no-repeat;
+				background-position: 20px 20px;
+				background-color: #d9b73b;
+			}
+		}
+
+		&--content {
+			width: 800px;
+		}
+
+		h1 {
+			color: #fff;
+			font-size: 40px;
+		}
+
+		p {
+			font-size: 20px;
+		}
 	}
 }

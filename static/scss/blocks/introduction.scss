@@ -64,6 +64,8 @@ $grey: #2f2f2f;
 		top: 9px;
 		left: 60px;
 		z-index: 3;
+		animation:fade 3000ms infinite;
+    	-webkit-animation:fade 3000ms infinite;
 	}
 
 	&__bg {

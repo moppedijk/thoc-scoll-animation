@@ -28,6 +28,14 @@
 				end: 100
 			});
 
+			this.component.animate('#mc-intro', {
+				duration: 400,
+				property: 'padding-top',
+				start: 0,
+				end: 600,
+				delay: 800
+			});
+
 			this.component.animate('#mc-content', {
 				duration: 200,
 				property: 'opacity',
@@ -83,25 +91,11 @@
 				end: 1,
 				delay: 400
 			});
-
-			this.component.animate('#mc2-bg', {
-				duration: 700,
-				property: 'top',
-				start: -500,
-				end: 0,
-			});
-
-			this.component.animate('#mc2-bg', {
-				duration: 100,
-				property: 'opacity',
-				start: 1,
-				end: 0.3,
-			});
 		}
 
 		this.init();
 	}
 
-	MotionDesign.Sections.MechanicalComputer = MechanicalComputer;
+	motionDesign.sections.MechanicalComputer = MechanicalComputer;
 
 })();

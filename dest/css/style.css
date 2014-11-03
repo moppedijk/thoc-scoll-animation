@@ -25,12 +25,17 @@ section {
 }
 
 /* line 17, ../scss/layout.scss */
+#md2 {
+  height: 500px;
+}
+
+/* line 21, ../scss/layout.scss */
 p {
   font-size: 12px;
   color: #fff;
 }
 
-/* line 23, ../scss/layout.scss */
+/* line 27, ../scss/layout.scss */
 .bg-fixed {
   width: 100%;
   height: 100%;
@@ -39,7 +44,7 @@ p {
   z-index: 1;
   background-size: cover;
 }
-/* line 32, ../scss/layout.scss */
+/* line 36, ../scss/layout.scss */
 .bg-cover {
   background-size: cover;
   position: absolute;
@@ -48,15 +53,56 @@ p {
   z-index: 1;
 }
 
-/* line 41, ../scss/layout.scss */
+/* line 45, ../scss/layout.scss */
 .header {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
 }
-/* line 46, ../scss/layout.scss */
+/* line 50, ../scss/layout.scss */
 .header--large {
   font-size: 48px;
+}
+
+/* line 55, ../scss/layout.scss */
+.list {
+  color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 61, ../scss/layout.scss */
+.list--large {
+  font-size: 14px;
+}
+/* line 66, ../scss/layout.scss */
+.list--mc li {
+  background-color: #28456c;
+  padding: 5px 10px;
+  margin: 20px 10px;
+  border-radius: 5px;
+}
+
+/* line 75, ../scss/layout.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 79, ../scss/layout.scss */
+.footer {
+  padding: 20px 20px 40px;
+  color: #000;
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 85, ../scss/layout.scss */
+.footer__left {
+  float: left;
+}
+/* line 89, ../scss/layout.scss */
+.footer__right {
+  float: right;
+  text-align: right;
 }
 /* line 2, ../../scss/blocks/circle.scss */
 .circle {
@@ -117,11 +163,11 @@ p {
   background-color: #988f59;
 }
 /* line 67, ../../scss/blocks/circle.scss */
-.circle--ma-yellow {
+.circle--md-yellow {
   background-color: #d9b73b;
 }
 /* line 70, ../../scss/blocks/circle.scss */
-.circle--ma-brown {
+.circle--md-brown {
   background-color: #a26939;
 }
 /* line 75, ../../scss/blocks/circle.scss */
@@ -129,44 +175,100 @@ p {
   width: 140px;
   height: 140px;
   text-align: center;
-  position: relative;
   z-index: 4;
 }
-/* line 82, ../../scss/blocks/circle.scss */
+/* line 81, ../../scss/blocks/circle.scss */
 .circle--top .icon {
-  margin-top: 50px;
+  margin-top: 30px;
 }
-/* line 87, ../../scss/blocks/circle.scss */
+/* line 86, ../../scss/blocks/circle.scss */
 .circle--center {
   width: 450px;
   height: 450px;
   margin-top: -100px;
-  position: relative;
   z-index: 3;
 }
-/* line 95, ../../scss/blocks/circle.scss */
+/* line 93, ../../scss/blocks/circle.scss */
 .circle--bottom {
   margin-top: -85px;
   width: 140px;
   height: 140px;
-  position: relative;
   z-index: 4;
 }
-/* line 3, ../../scss/blocks/electronical-computer.scss */
+/* line 100, ../../scss/blocks/circle.scss */
+.circle--mask {
+  z-index: 4;
+  background: #fff;
+}
+/* line 104, ../../scss/blocks/circle.scss */
+.circle--mask img {
+  position: relative;
+  z-index: 3;
+}
+/* line 109, ../../scss/blocks/circle.scss */
+.circle--mask-large {
+  width: 450px;
+  height: 450px;
+}
+/* line 4, ../../scss/blocks/electronical-computer.scss */
 .ec {
   position: relative;
   overflow: hidden;
   background-color: #2b769f;
 }
-/* line 8, ../../scss/blocks/electronical-computer.scss */
+/* line 9, ../../scss/blocks/electronical-computer.scss */
 .ec__inner {
   position: relative;
   z-index: 2;
+  max-width: 450px;
+  margin: 0 auto;
 }
-/* line 13, ../../scss/blocks/electronical-computer.scss */
+/* line 16, ../../scss/blocks/electronical-computer.scss */
 .ec__bg {
   top: -500px;
   background-image: url("../../img/ec_bg.jpg");
+}
+/* line 21, ../../scss/blocks/electronical-computer.scss */
+.ec__content {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+/* line 27, ../../scss/blocks/electronical-computer.scss */
+.ec__content h1 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+/* line 33, ../../scss/blocks/electronical-computer.scss */
+.ec__content p {
+  font-size: 20px;
+}
+/* line 38, ../../scss/blocks/electronical-computer.scss */
+.ec__list {
+  position: relative;
+}
+/* line 41, ../../scss/blocks/electronical-computer.scss */
+.ec__list-item {
+  max-width: 295px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+}
+/* line 50, ../../scss/blocks/electronical-computer.scss */
+.ec__list-icon {
+  text-align: center;
+}
+/* line 53, ../../scss/blocks/electronical-computer.scss */
+.ec__list-icon .icon {
+  padding: 20px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  background-color: #79a1b7;
 }
 /* line 1, ../../scss/blocks/icon.scss */
 .icon {
@@ -180,9 +282,123 @@ p {
 }
 /* line 10, ../../scss/blocks/icon.scss */
 .icon--abacus {
-  background-image: url("../../img/icon-abacus.png");
-  width: 98px;
-  height: 64px;
+  background-image: url("../../img/icon-abacus.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 16, ../../scss/blocks/icon.scss */
+.icon--lamps {
+  background-image: url("../../img/icon-lamps.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 22, ../../scss/blocks/icon.scss */
+.icon--chip {
+  background-image: url("../../img/icon-chip.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 28, ../../scss/blocks/icon.scss */
+.icon--chip1 {
+  background-image: url("../../img/icon-chip1.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 34, ../../scss/blocks/icon.scss */
+.icon--chip2 {
+  background-image: url("../../img/icon-chip2.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 40, ../../scss/blocks/icon.scss */
+.icon--chip3 {
+  background-image: url("../../img/icon-chip3.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 46, ../../scss/blocks/icon.scss */
+.icon--chip4 {
+  background-image: url("../../img/icon-chip4.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 52, ../../scss/blocks/icon.scss */
+.icon--comp {
+  background-image: url("../../img/icon-comp.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 58, ../../scss/blocks/icon.scss */
+.icon--phone {
+  background-image: url("../../img/icon-phone.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 64, ../../scss/blocks/icon.scss */
+.icon--calculating {
+  background-image: url("../../img/icon-calculating.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 70, ../../scss/blocks/icon.scss */
+.icon--logaritme {
+  background-image: url("../../img/icon-logaritme.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 76, ../../scss/blocks/icon.scss */
+.icon--ponskaart {
+  background-image: url("../../img/icon-ponskaart.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 82, ../../scss/blocks/icon.scss */
+.icon--binair {
+  background-image: url("../../img/icon-binair.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 88, ../../scss/blocks/icon.scss */
+.icon--light {
+  background-image: url("../../img/icon-light.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 94, ../../scss/blocks/icon.scss */
+.icon--resistor {
+  background-image: url("../../img/icon-resistor.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 100, ../../scss/blocks/icon.scss */
+.icon--ibm {
+  background-image: url("../../img/icon-ibm.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 106, ../../scss/blocks/icon.scss */
+.icon--microsoft {
+  background-image: url("../../img/icon-microsoft.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 112, ../../scss/blocks/icon.scss */
+.icon--intel {
+  background-image: url("../../img/icon-intel.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 118, ../../scss/blocks/icon.scss */
+.icon--tablet {
+  background-image: url("../../img/icon-tablet.gif");
+  width: 100px;
+  height: 100px;
+}
+/* line 124, ../../scss/blocks/icon.scss */
+.icon--smartphone {
+  background-image: url("../../img/icon-smartphone.gif");
+  width: 100px;
+  height: 100px;
 }
 /**
  * Introduction
@@ -248,8 +464,10 @@ p {
   top: 9px;
   left: 60px;
   z-index: 3;
+  animation: fade 3000ms infinite;
+  -webkit-animation: fade 3000ms infinite;
 }
-/* line 69, ../../scss/blocks/introduction.scss */
+/* line 71, ../../scss/blocks/introduction.scss */
 .in__bg {
   background-image: url("../../img/in_bg.jpg");
 }
@@ -262,7 +480,7 @@ p {
 /* line 9, ../../scss/blocks/mechanical-computer.scss */
 .mc__inner {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   width: 450px;
   margin: 0 auto;
   /* scrollorama */
@@ -283,53 +501,334 @@ p {
 .mc__bg--2 {
   top: -500px;
 }
-/* line 1, ../../scss/blocks/miniturisatie.scss */
-.mi {
+/* line 33, ../../scss/blocks/mechanical-computer.scss */
+.mc__header {
+  padding: 70px 0px 40px;
   position: relative;
-  overflow: hidden;
 }
-/* line 5, ../../scss/blocks/miniturisatie.scss */
-.mi__inner {
+/* line 37, ../../scss/blocks/mechanical-computer.scss */
+.mc__header--right {
+  position: absolute;
+  right: 90px;
+  top: 110px;
+}
+/* line 44, ../../scss/blocks/mechanical-computer.scss */
+.mc__content {
+  max-width: 960px;
+  margin: 0 auto;
   position: relative;
   z-index: 2;
 }
-/* line 10, ../../scss/blocks/miniturisatie.scss */
+/* line 51, ../../scss/blocks/mechanical-computer.scss */
+.mc__column {
+  width: 50%;
+}
+/* line 54, ../../scss/blocks/mechanical-computer.scss */
+.mc__column--left {
+  float: left;
+  opacity: 0;
+}
+/* line 59, ../../scss/blocks/mechanical-computer.scss */
+.mc__column--right {
+  float: right;
+  padding-top: 45px;
+  opacity: 0;
+}
+/* line 65, ../../scss/blocks/mechanical-computer.scss */
+.mc__column-inner {
+  padding: 20px;
+}
+/* line 70, ../../scss/blocks/mechanical-computer.scss */
+.mc__list {
+  position: relative;
+}
+/* line 73, ../../scss/blocks/mechanical-computer.scss */
+.mc__list-item {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+}
+/* line 79, ../../scss/blocks/mechanical-computer.scss */
+.mc__list-left {
+  float: left;
+}
+/* line 82, ../../scss/blocks/mechanical-computer.scss */
+.mc__list-left p,
+.mc__list-left h1 {
+  margin-left: 162px;
+}
+/* line 88, ../../scss/blocks/mechanical-computer.scss */
+.mc__list-right {
+  float: right;
+}
+/* line 91, ../../scss/blocks/mechanical-computer.scss */
+.mc__list-right p {
+  max-width: 600px;
+}
+/* line 96, ../../scss/blocks/mechanical-computer.scss */
+.mc__list--icon {
+  width: 160px;
+}
+/* line 99, ../../scss/blocks/mechanical-computer.scss */
+.mc__list--icon .icon {
+  padding: 20px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  background-color: #28456c;
+}
+/* line 108, ../../scss/blocks/mechanical-computer.scss */
+.mc__list--content {
+  width: 800px;
+}
+/* line 112, ../../scss/blocks/mechanical-computer.scss */
+.mc__list h1 {
+  color: #fff;
+  font-size: 40px;
+}
+/* line 117, ../../scss/blocks/mechanical-computer.scss */
+.mc__list p {
+  font-size: 20px;
+}
+/* line 121, ../../scss/blocks/mechanical-computer.scss */
+.mc__list #mc-list-item1 {
+  z-index: 6;
+}
+/* line 124, ../../scss/blocks/mechanical-computer.scss */
+.mc__list #mc-list-item2 {
+  z-index: 5;
+}
+/* line 127, ../../scss/blocks/mechanical-computer.scss */
+.mc__list #mc-list-item3 {
+  z-index: 4;
+}
+/* line 130, ../../scss/blocks/mechanical-computer.scss */
+.mc__list #mc-list-item4 {
+  z-index: 3;
+}
+/* line 133, ../../scss/blocks/mechanical-computer.scss */
+.mc__list #mc-list-item5 {
+  z-index: 2;
+}
+/**
+	Miniaturisatie
+*/
+/* line 8, ../../scss/blocks/miniaturisatie.scss */
+.mi {
+  position: relative;
+  overflow: hidden;
+  background-color: #31827e;
+}
+/* line 13, ../../scss/blocks/miniaturisatie.scss */
+.mi__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 450px;
+  margin: 0 auto;
+}
+/* line 20, ../../scss/blocks/miniaturisatie.scss */
 .mi__bg {
   top: -500px;
   background-image: url("../../img/mi_bg.jpg");
 }
-/* line 1, ../../scss/blocks/mobile-devices.scss */
+/* line 25, ../../scss/blocks/miniaturisatie.scss */
+.mi__content {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+/* line 32, ../../scss/blocks/miniaturisatie.scss */
+.mi__list {
+  position: relative;
+}
+/* line 35, ../../scss/blocks/miniaturisatie.scss */
+.mi__list-item {
+  overflow: hidden;
+  position: absolute;
+}
+/* line 41, ../../scss/blocks/miniaturisatie.scss */
+.mi__list-left {
+  float: left;
+}
+/* line 44, ../../scss/blocks/miniaturisatie.scss */
+.mi__list-left p,
+.mi__list-left h1 {
+  margin-left: 162px;
+}
+/* line 50, ../../scss/blocks/miniaturisatie.scss */
+.mi__list-right {
+  float: right;
+}
+/* line 53, ../../scss/blocks/miniaturisatie.scss */
+.mi__list-right p {
+  max-width: 600px;
+}
+/* line 58, ../../scss/blocks/miniaturisatie.scss */
+.mi__list--icon {
+  width: 160px;
+}
+/* line 61, ../../scss/blocks/miniaturisatie.scss */
+.mi__list--icon .icon {
+  padding: 20px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  background-color: #9f8655;
+}
+/* line 70, ../../scss/blocks/miniaturisatie.scss */
+.mi__list--content {
+  width: 800px;
+}
+/* line 74, ../../scss/blocks/miniaturisatie.scss */
+.mi__list h1 {
+  color: #fff;
+  font-size: 40px;
+}
+/* line 79, ../../scss/blocks/miniaturisatie.scss */
+.mi__list p {
+  font-size: 20px;
+}
+/**
+	Mobile devices
+*/
+/* line 5, ../../scss/blocks/mobile-devices.scss */
 .md {
   position: relative;
   overflow: hidden;
+  background-color: #214491;
 }
-/* line 5, ../../scss/blocks/mobile-devices.scss */
+/* line 10, ../../scss/blocks/mobile-devices.scss */
 .md__inner {
   position: relative;
   z-index: 2;
+  max-width: 450px;
+  margin: 0 auto;
 }
-/* line 10, ../../scss/blocks/mobile-devices.scss */
+/* line 17, ../../scss/blocks/mobile-devices.scss */
 .md__bg {
   top: -500px;
   background-image: url("../../img/md_bg.jpg");
 }
-/* line 1, ../../scss/blocks/pay-off.scss */
-.po {
+/* line 22, ../../scss/blocks/mobile-devices.scss */
+.md__content {
+  max-width: 960px;
+  margin: 0 auto;
   position: relative;
-  overflow: hidden;
+  z-index: 3;
 }
-/* line 1, ../../scss/blocks/personal-computer.scss */
+/* line 29, ../../scss/blocks/mobile-devices.scss */
+.md__list {
+  position: relative;
+}
+/* line 32, ../../scss/blocks/mobile-devices.scss */
+.md__list-item {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+}
+/* line 38, ../../scss/blocks/mobile-devices.scss */
+.md__list-left {
+  float: left;
+}
+/* line 41, ../../scss/blocks/mobile-devices.scss */
+.md__list-left p,
+.md__list-left h1 {
+  margin-left: 162px;
+}
+/* line 47, ../../scss/blocks/mobile-devices.scss */
+.md__list-right {
+  float: right;
+}
+/* line 50, ../../scss/blocks/mobile-devices.scss */
+.md__list-right p {
+  max-width: 600px;
+}
+/* line 55, ../../scss/blocks/mobile-devices.scss */
+.md__list--icon {
+  width: 160px;
+}
+/* line 58, ../../scss/blocks/mobile-devices.scss */
+.md__list--icon .icon {
+  padding: 20px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  background-color: #d9b73b;
+}
+/* line 67, ../../scss/blocks/mobile-devices.scss */
+.md__list--content {
+  width: 800px;
+}
+/* line 71, ../../scss/blocks/mobile-devices.scss */
+.md__list h1 {
+  color: #fff;
+  font-size: 40px;
+}
+/* line 76, ../../scss/blocks/mobile-devices.scss */
+.md__list p {
+  font-size: 20px;
+}
+/**
+	Personal computer
+*/
+/* line 8, ../../scss/blocks/personal-computer.scss */
 .pc {
   position: relative;
   overflow: hidden;
+  background-color: #e5d786;
 }
-/* line 5, ../../scss/blocks/personal-computer.scss */
+/* line 13, ../../scss/blocks/personal-computer.scss */
 .pc__inner {
   position: relative;
   z-index: 2;
+  max-width: 450px;
+  margin: 0 auto;
 }
-/* line 10, ../../scss/blocks/personal-computer.scss */
+/* line 20, ../../scss/blocks/personal-computer.scss */
 .pc__bg {
   top: -500px;
   background-image: url("../../img/pc_bg.jpg");
+}
+/* line 25, ../../scss/blocks/personal-computer.scss */
+.pc__content {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+/* line 31, ../../scss/blocks/personal-computer.scss */
+.pc__content h1 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+/* line 37, ../../scss/blocks/personal-computer.scss */
+.pc__content p {
+  font-size: 20px;
+}
+/* line 42, ../../scss/blocks/personal-computer.scss */
+.pc__list {
+  position: relative;
+}
+/* line 45, ../../scss/blocks/personal-computer.scss */
+.pc__list-item {
+  max-width: 295px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+}
+/* line 54, ../../scss/blocks/personal-computer.scss */
+.pc__list-icon {
+  text-align: center;
+}
+/* line 57, ../../scss/blocks/personal-computer.scss */
+.pc__list-icon .icon {
+  padding: 20px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  background-color: #988f59;
 }

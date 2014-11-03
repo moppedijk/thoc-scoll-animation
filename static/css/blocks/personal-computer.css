@@ -1,15 +1,63 @@
-/* line 1, ../../scss/blocks/personal-computer.scss */
+/**
+	Personal computer
+*/
+/* line 8, ../../scss/blocks/personal-computer.scss */
 .pc {
   position: relative;
   overflow: hidden;
+  background-color: #e5d786;
 }
-/* line 5, ../../scss/blocks/personal-computer.scss */
+/* line 13, ../../scss/blocks/personal-computer.scss */
 .pc__inner {
   position: relative;
   z-index: 2;
+  max-width: 450px;
+  margin: 0 auto;
 }
-/* line 10, ../../scss/blocks/personal-computer.scss */
+/* line 20, ../../scss/blocks/personal-computer.scss */
 .pc__bg {
   top: -500px;
   background-image: url("../../img/pc_bg.jpg");
+}
+/* line 25, ../../scss/blocks/personal-computer.scss */
+.pc__content {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+/* line 31, ../../scss/blocks/personal-computer.scss */
+.pc__content h1 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+/* line 37, ../../scss/blocks/personal-computer.scss */
+.pc__content p {
+  font-size: 20px;
+}
+/* line 42, ../../scss/blocks/personal-computer.scss */
+.pc__list {
+  position: relative;
+}
+/* line 45, ../../scss/blocks/personal-computer.scss */
+.pc__list-item {
+  max-width: 295px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+}
+/* line 54, ../../scss/blocks/personal-computer.scss */
+.pc__list-icon {
+  text-align: center;
+}
+/* line 57, ../../scss/blocks/personal-computer.scss */
+.pc__list-icon .icon {
+  padding: 20px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  background-color: #988f59;
 }

@@ -1,17 +1,62 @@
-$blue: #2b769f;
+$blue: #79a1b7;
+$darkblue: #2b769f;
 
 .ec {
 	position: relative;
 	overflow: hidden;
-	background-color: $blue;
+	background-color: $darkblue;
 
 	&__inner {
 		position: relative;
 		z-index: 2;
+		max-width: 450px;
+		margin: 0 auto;
 	}
 	
 	&__bg {
 		top: -500px;
 		background-image: url('../../img/ec_bg.jpg');
+	}
+
+	&__content {
+		max-width: 960px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 3;
+
+		h1 {
+			color: #fff;
+			font-size: 40px;
+			text-align: center;
+		}
+
+		p {
+			font-size: 20px;
+		}
+	}
+
+	&__list {
+		position: relative;
+
+		&-item {
+			max-width: 295px;
+			margin-left: 10px;
+			margin-right: 10px;
+			display: inline-block;
+			position: absolute;
+			opacity: 0;
+		}
+
+		&-icon {
+			text-align: center;
+
+			.icon {
+				padding: 20px;
+				border-radius: 50%;
+				background-repeat: no-repeat;
+				background-position: 20px 20px;
+				background-color: $blue;
+			}
+		}
 	}
 }

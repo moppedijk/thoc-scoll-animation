@@ -8,7 +8,7 @@ $brown: #a4633b;
 
 	&__inner {
 		position: relative;
-		z-index: 2;
+		z-index: 3;
 		width: 450px;
 		margin: 0 auto;
 		
@@ -29,4 +29,111 @@ $brown: #a4633b;
 			top: -500px;
 		}
 	}
+
+	&__header {
+		padding: 70px 0px 40px;
+		position: relative;
+
+		&--right {
+			position: absolute;
+			right: 90px;
+			top: 110px;
+		}
+	}
+
+	&__content {
+		max-width: 960px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__column {
+		width: 50%;
+
+		&--left {
+			float: left;
+			opacity: 0;
+		}
+
+		&--right {
+			float: right;
+			padding-top: 45px;
+			opacity: 0;
+		}
+
+		&-inner {
+			padding: 20px;
+		}
+	}
+
+	&__list {
+		position: relative;
+
+		&-item {
+			overflow: hidden;
+			position: absolute;
+			opacity: 0;
+		}
+
+		&-left {
+			float: left;
+
+			p,
+			h1 {
+				margin-left: 162px;
+			}
+		}
+
+		&-right {
+			float: right;
+
+			p {
+				max-width: 600px;
+			}
+		}
+
+		&--icon {
+			width: 160px;
+
+			.icon {
+				padding: 20px;
+				border-radius: 50%;
+				background-repeat: no-repeat;
+				background-position: 20px 20px;
+				background-color: $blue;
+			}
+		}
+
+		&--content {
+			width: 800px;
+		}
+
+		h1 {
+			color: #fff;
+			font-size: 40px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+
+		#mc-list-item1 {
+			z-index: 6
+		}
+		#mc-list-item2 {
+			z-index: 5
+		}
+		#mc-list-item3 {
+			z-index: 4
+		}
+		#mc-list-item4 {
+			z-index: 3
+		}
+		#mc-list-item5 {
+			z-index: 2
+		}
+	}
 }
+
+

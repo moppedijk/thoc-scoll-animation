@@ -1,6 +1,6 @@
-var MotionDesign = MotionDesign || {};
-	MotionDesign.Components = MotionDesign.Components || {};
-	MotionDesign.Sections = MotionDesign.Sections || {};
+var motionDesign = motionDesign || {};
+	motionDesign.components = motionDesign.components || {};
+	motionDesign.sections = motionDesign.sections || {};
 
 (function(){
 	
@@ -8,11 +8,11 @@ var MotionDesign = MotionDesign || {};
 	 	Controller object that initializes the application
 	*/
 
-	MotionDesign.App = {
+	motionDesign.app = {
 
 		init: function () {
 			
-			MotionDesign.config = {
+			motionDesign.config = {
 				appId: "app",
 				sections: [
 					{
@@ -30,7 +30,7 @@ var MotionDesign = MotionDesign || {};
 				]
 			}
 
-			MotionDesign.App.startAnimation();
+			motionDesign.app.startAnimation();
 		},
 		startAnimation: function() {
 
@@ -59,7 +59,7 @@ var MotionDesign = MotionDesign || {};
 				{ opacity: 1, left: 60, delay: 1.3 }
 			);
 
-			MotionDesign.Components.Scrollorama.init();
+			motionDesign.components.scrollorama.init();
 		}
 	}
 
