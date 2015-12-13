@@ -104,6 +104,10 @@ p {
   float: right;
   text-align: right;
 }
+/* line 94, ../scss/layout.scss */
+.footer a {
+  color: #000;
+}
 /* line 2, ../../scss/blocks/circle.scss */
 .circle {
   border-radius: 50%;
